@@ -6,14 +6,22 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <Layout>
-      <div>
+      <di>
         <h1>Products</h1>
+      </di>
+      <di>
         <ul>
+      </di>
+        <di>
           <li>Product 1</li>
+        </di>
+        <di>
           <li>Product 2</li>
+        </di>
+        <di>
           <li>Product 3</li>
-        </ul>
-      </div>
+        </di>
+      <di></ul></di>
     </Layout>
   );
 }
