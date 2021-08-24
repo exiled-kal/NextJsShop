@@ -18,9 +18,7 @@ function Layout({ children }) {
       </AppBar>
       <Container className={classes.main}>{children}</Container>
       <footer>
-        <Typography className={classes.footer}>
-          All rights reserved. Cake Shop{" "}
-        </Typography>
+        <Typography className={}>All rights reserved. Cake Shop </Typography>
       </footer>
     </div>
   );

@@ -5,22 +5,20 @@ import useStyles from "../utils/styles";
 
 function Layout({ children }) {
   const classes = useStyles();
-
+  
   return (
     <div>
       <Head>
         <title>My Cake Shop</title>
       </Head>
-      <AppBar position="static" className={classes.navbar}>
+      <AppBar position="static">
         <Toolbar>
           <Typography>Cake Shop</Typography>
         </Toolbar>
       </AppBar>
-      <Container className={classes.main}>{children}</Container>
+      <Container>{children}</Container>
       <footer>
-        <Typography className={classes.footer}>
-          All rights reserved. Cake Shop{" "}
-        </Typography>
+        <Typography>All rights reserved. Cake Shop </Typography>
       </footer>
     </div>
   );
