@@ -25,15 +25,6 @@ function Layout({ children }) {
               <Typography className={classes.brand}>Cake Shop</Typography>
             </Link>
           </NextLink>
-          <div className={classes.grow}></div>
-          <div>
-            <NextLink href="/cart" passHref>
-              <Link>Cart</Link>
-            </NextLink>
-            <NextLink href="/login" passHref>
-              LogIn
-            </NextLink>
-          </div>
         </Toolbar>
       </AppBar>
       <Container className={classes.main}>{children}</Container>

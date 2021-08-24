@@ -31,6 +31,8 @@ function Layout({ children }) {
               <Link>Cart</Link>
             </NextLink>
             <NextLink href="/login" passHref>
+            <NextLink href="/login" passHref>
+              LogIn
               LogIn
             </NextLink>
           </div>

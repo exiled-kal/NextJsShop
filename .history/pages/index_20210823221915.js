@@ -7,14 +7,21 @@ import {
   Typography,
   CardActions,
   Button,
-} from "@material-ui/core";
-import Layout from "../components/Layout";
-import data from "../utils/data";
+} from '@material-ui/core';
+import Layout from '../components/Layout';
+import data from '../utils/data';
 
 export default function Home() {
   return (
     <Layout>
       <div>
+      <h1>Products</h1>
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+      </ul>
+    </div>
         <h1>Products</h1>
         <Grid container spacing={3}>
           {data.products.map((product) => (
@@ -42,5 +49,6 @@ export default function Home() {
         </Grid>
       </div>
     </Layout>
-  );
+
+  )
 }

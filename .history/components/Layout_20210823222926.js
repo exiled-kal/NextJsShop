@@ -27,12 +27,9 @@ function Layout({ children }) {
           </NextLink>
           <div className={classes.grow}></div>
           <div>
-            <NextLink href="/cart" passHref>
-              <Link>Cart</Link>
-            </NextLink>
-            <NextLink href="/login" passHref>
-              LogIn
-            </NextLink>
+              <NextLink href='/cart' passHref>
+                  
+              </NextLink>
           </div>
         </Toolbar>
       </AppBar>

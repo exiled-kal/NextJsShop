@@ -1,13 +1,4 @@
-import {
-  Grid,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-} from "@material-ui/core";
+import { Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from "@material-ui/core";
 import Layout from "../components/Layout";
 import data from "../utils/data";
 
@@ -25,17 +16,14 @@ export default function Home() {
                     component="img"
                     image={product.image}
                     title={product.name}
-                  ></CardMedia>
-                  <CardContent>
-                    <Typography>{product.name}</Typography>
-                  </CardContent>
+                  >
+                    <CardContent>
+                      <Typography>
+                        
+                      </Typography>
+                    </CardContent>
+                  </CardMedia>
                 </CardActionArea>
-                <CardActions>
-                  <Typography>${product.price}</Typography>
-                  <Button size="small" color="primary">
-                    Add to cart
-                  </Button>
-                </CardActions>
               </Card>
             </Grid>
           ))}

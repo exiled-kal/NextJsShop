@@ -1,0 +1,22 @@
+import { Grid } from "@material-ui/core";
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "../components/Layout";
+
+
+export default function Home() {
+  return (
+    <Layout>
+      <div>
+        <h1>Products</h1>
+        <Grid container spacing={3}>
+          {data.products.map((product) => (
+            <Grid item md={4} key={product.name}>
+
+            </Grid>
+          ) )}
+        </Grid>
+      </div>
+    </Layout>
+  );
+}

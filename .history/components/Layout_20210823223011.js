@@ -30,9 +30,7 @@ function Layout({ children }) {
             <NextLink href="/cart" passHref>
               <Link>Cart</Link>
             </NextLink>
-            <NextLink href="/login" passHref>
-              LogIn
-            </NextLink>
+            <NextLInk
           </div>
         </Toolbar>
       </AppBar>

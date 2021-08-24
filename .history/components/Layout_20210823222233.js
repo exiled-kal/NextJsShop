@@ -1,10 +1,4 @@
-import {
-  AppBar,
-  Container,
-  Link,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
 import Head from "next/head";
 import React from "react";
 import NextLink from "next/link";
@@ -20,20 +14,7 @@ function Layout({ children }) {
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
-          <NextLink href="/" passHref>
-            <Link>
-              <Typography className={classes.brand}>Cake Shop</Typography>
-            </Link>
-          </NextLink>
-          <div className={classes.grow}></div>
-          <div>
-            <NextLink href="/cart" passHref>
-              <Link>Cart</Link>
-            </NextLink>
-            <NextLink href="/login" passHref>
-              LogIn
-            </NextLink>
-          </div>
+          <Typography>Cake Shop</Typography>
         </Toolbar>
       </AppBar>
       <Container className={classes.main}>{children}</Container>

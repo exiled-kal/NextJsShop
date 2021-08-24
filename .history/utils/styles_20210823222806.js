@@ -8,9 +8,7 @@ const useStyles = makeStyles({
       marginLeft: 10,
     },
   },
-  grow: {
-    flexGrow: 1,
-  },
+  grow
   brand: {
     fontWeight: "bold",
     fontSize: "1.5rem",

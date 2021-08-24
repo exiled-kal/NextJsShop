@@ -31,7 +31,7 @@ function Layout({ children }) {
               <Link>Cart</Link>
             </NextLink>
             <NextLink href="/login" passHref>
-              LogIn
+                
             </NextLink>
           </div>
         </Toolbar>

@@ -28,10 +28,10 @@ function Layout({ children }) {
           <div className={classes.grow}></div>
           <div>
             <NextLink href="/cart" passHref>
+            <NextLink href="/cart" passHref>
+              <Link>Cart</Link>
               <Link>Cart</Link>
             </NextLink>
-            <NextLink href="/login" passHref>
-              LogIn
             </NextLink>
           </div>
         </Toolbar>
