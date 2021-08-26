@@ -1,0 +1,1 @@
+import nc from 'ne'
