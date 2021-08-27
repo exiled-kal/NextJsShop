@@ -11,6 +11,7 @@ import {
 import NextLink from "next/link";
 import Layout from "../components/Layout";
 import Product from "../models/Product";
+import data from "../utils/data";
 import db from "../utils/db";
 
 export default function Home(props) {
@@ -57,7 +58,7 @@ export async function getServerSideProps() {
   await db.disconnect();
   return {
     props: {
-      products: products.map(db.convertDocToObj),
+      products:
     },
   };
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import NextLink from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import data from "../../utils/data";
 import Layout from "../../components/Layout";
 import {
   Grid,
@@ -113,7 +115,7 @@ export async function getServerSideProps(context) {
   await db.disconnect();
   return {
     props: {
-      product: db.convertDocToObj(product),
+      products: db.convertDocToObjproduct.map(),
     },
   };
 }
